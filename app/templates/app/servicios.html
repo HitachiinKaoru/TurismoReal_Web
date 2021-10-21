@@ -1,0 +1,98 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'app/css/servicios.css' %}">
+{% endblock %}
+{% block contenido %}
+
+<div>
+    <img src="{% static 'app/img/bg-aloja.jpg' %}" alt="home" class="image-bg-alojamiento">
+</div>
+<div class="content-search-servicio">
+    <h1>Servicios</h1>
+    <div class="search-servicio">
+        <form action="" class="form-search-servicio">
+            <button class="search-btn"><img src="{% static 'app/img/buscar.png' %}" alt=""></button>
+            <div>
+                <h2>Tipo</h2>
+                <input type="text" placeholder="Desplazamiento / Tour">
+            </div>
+            <div>
+                <h2>Ubicación</h2>
+                <input type="text" placeholder="¿Desde?">
+            </div>
+            <div>
+                <h2>Fecha</h2>
+                <input type="text" placeholder="Selecciona Fecha">
+            </div>
+            <div>
+                <h2>Personas</h2>
+                <input type="text" placeholder="¿Cuántos?">
+            </div>
+        </form>
+    </div>
+</div>
+<div class="content-servicios">
+   <div class="servicios-info">
+      <img src="{% static 'app/img/tour.jpg' %}" alt="">
+       <div class="descripcion-servicio">
+        <p>Pucón</p>
+        <a href="">Ascenso al volcán Villarica</a>
+        <p>Sube el imponente volcán Villarrica, el más activo de América del Sur. Déjate enamorar por la cima y la formación geológica del cráter activo.</p>
+       </div>
+       <div class="info-valor">
+           <p>Por persona</p>
+           <a href="">$112,328</a>
+       </div>
+    </div>
+    <div class="servicios-info">
+        <img src="{% static 'app/img/tour.jpg' %}" alt="">
+         <div class="descripcion-servicio">
+          <p>Pucón</p>
+          <a href="">Ascenso al volcán Villarica</a>
+          <p>Sube el imponente volcán Villarrica, el más activo de América del Sur. Déjate enamorar por la cima y la formación geológica del cráter activo.</p>
+         </div>
+         <div class="info-valor">
+             <p>Por persona</p>
+             <a href="">$112,328</a>
+         </div>
+      </div>
+      <div class="servicios-info">
+        <img src="{% static 'app/img/tour.jpg' %}" alt="">
+         <div class="descripcion-servicio">
+          <p>Pucón</p>
+          <a href="">Ascenso al volcán Villarica</a>
+          <p>Sube el imponente volcán Villarrica, el más activo de América del Sur. Déjate enamorar por la cima y la formación geológica del cráter activo.</p>
+         </div>
+         <div class="info-valor">
+             <p>Por persona</p>
+             <a href="">$112,328</a>
+         </div>
+      </div>
+      <div class="servicios-info">
+        <img src="{% static 'app/img/tour.jpg' %}" alt="">
+         <div class="descripcion-servicio">
+          <p>Pucón</p>
+          <a href="">Ascenso al volcán Villarica</a>
+          <p>Sube el imponente volcán Villarrica, el más activo de América del Sur. Déjate enamorar por la cima y la formación geológica del cráter activo.</p>
+         </div>
+         <div class="info-valor">
+             <p>Por persona</p>
+             <a href="">$112,328</a>
+         </div>
+      </div>
+      <div class="servicios-info">
+        <img src="{% static 'app/img/tour.jpg' %}" alt="">
+         <div class="descripcion-servicio">
+          <p>Pucón</p>
+          <a href="">Ascenso al volcán Villarica</a>
+          <p>Sube el imponente volcán Villarrica, el más activo de América del Sur. Déjate enamorar por la cima y la formación geológica del cráter activo.</p>
+         </div>
+         <div class="info-valor">
+             <p>Por persona</p>
+             <a href="">$112,328</a>
+         </div>
+      </div>
+</div>
+{% endblock %}

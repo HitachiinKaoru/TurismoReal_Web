@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Real</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    {% load static %}
+
+    {% block css %}
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+
+</head>
+<body>
+    <header>
+        <h1 class="title"> Turismo Real</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Inicio</a>
+                </li>
+                <li>
+                    <a href="/alojamientos">Alojamientos</a>
+                </li>
+                <li>
+                    <a href="/servicios">Servicios</a>
+                </li>
+                <li class="nav-link-4">
+                    <a data-toggle="modal" data-target="#modal-iniciar">Iniciar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    {% block contenido %}
+    {% endblock %}
+    <footer>
+        <p>@Copyright 2021</p>
+        <div class="info-ubicacion">
+            <img src="{%static 'app/img/ubicacion.png'%}" alt="">
+            <p>Av. Las Condes 1234, Oficina 2</p>
+        </div>
+        <div class="info-correo">
+            <img src="{%static 'app/img/correo.png'%}" alt="">
+            <p>consultas@turismoreal.cl</p>
+        </div>
+    </footer>
+    <div id="modal-iniciar" class="modal fade" role="dialog" style="z-index: 1400;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <form action="" class="form-login">
+                  <div>
+                      <h1>Iniciar Sesión</h1>
+                      <img src="{%static 'app/img/usuario.png'%}">
+                      <input type="text" placeholder="Usuario">
+                  </div>
+                  <div>
+                      <img src="{%static 'app/img/lock.png'%}">
+                      <input type="password" placeholder="Contraseña">
+                  </div>
+                  <input type="submit" value="Entrar" class="entrar">
+                  <p>No tienes cuenta? <a href="" data-toggle="modal" data-target="#modal-registro">Registrate Aquí!</a></p>
+              </form>
+            </div>      
+          </div>
+        </div>
+    </div>
+    <div id="modal-registro" class="modal fade" role="dialog" style="z-index: 1600;">
+        <div class="modal-dialog">
+          <div class="modal-content"> 
+              <form action="" class="form-registro">
+                  <div>
+                      <h1>Crear una cuenta</h1>
+                      <p>Rut</p>
+                      <input type="text" placeholder="12345678-9">
+                  </div>
+                  <div>
+                      <p>Nombres</p>
+                      <input type="text" placeholder="Nombres">
+                  </div>
+                  <div>
+                      <p>Apellido Paterno</p>
+                      <input type="text" placeholder="Apellido Paterno">
+                  </div>
+                  <div>
+                      <p>Apellido Materno</p>
+                      <input type="text" placeholder="Apellido Materno">
+                  </div>
+                  <div>
+                      <p>Correo</p>
+                      <input type="text" placeholder="ejemplo@mail.com">
+                  </div>
+                  <div>
+                      <p>Contraseña</p>
+                      <input type="password" placeholder="Contraseña">
+                  </div>
+                  <div>
+                      <p>Confirmar contraseña</p>
+                      <input type="password" placeholder="Confirmar Contraseña">
+                  </div>
+                  <input type="submit" value="Registrarse" class="registrar">
+              </form>
+            </div>      
+        </div>
+      </div>
+</body>
+<script src="{%static 'app/js/modal.js'%}"></script>
+</html>

@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    margin:0;
+    padding: 0;  
+    font-family: 'Roboto', sans-serif !important; 
+ }
+ 
+ /*NAVBAR*/
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #ffffffbd;
+    transition: all 0.5s;    
+    position: absolute;
+}
+
+.title{
+    color: black;
+    left: 100px;
+    letter-spacing: 0;
+    top: 15px;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+}
+nav {
+    width: auto;
+    float:right;
+    right: 100px;
+    position: absolute;
+    top: 36px;
+    justify-content: center;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin-left:20px;
+    
+}
+
+nav > ul > li > a {
+    color: #6C6C6C;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px;
+
+}
+
+nav > ul > .nav-link-4{
+    color: black !important;
+    font-weight: 700;
+    
+}
+/*BACKGROUND*/
+.image-bg{   
+    width: 100%;
+    height: auto;
+}
+
+/*MODAL INICIAR SESIÓN*/
+.modal {
+    overflow-y:auto;
+}
+
+.form-login{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    margin-left: auto;
+    margin-right: auto;
+    height: 360px;
+}
+
+.form-login > div > h1{
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.form-login > div > input{
+    margin-top: 21px;
+    width: 480px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-indent: 50px;
+    padding-top: 10px;
+  
+}
+
+.form-login > div > img{
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+.form-login > div {
+    text-align: center;
+}
+
+.form-login > div > input::placeholder{
+    font-size: 24px;
+}
+
+.form-login > .entrar{
+    margin-top: 21px;
+    border: 0;
+    width: 480px;
+    height: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    background-color: #3151A1;
+    text-align: center;
+}
+
+.form-login > p{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.form-login > p > a{
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #3151A1;
+}
+
+/*MODAL REGISTRAR*/
+.form-registro{
+    text-align: center;
+    height: 910px;
+
+}
+
+.form-registro > div > h1{
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.form-registro > div > input{
+    width: 500px;
+    height: 54px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-indent: 10px;
+}
+
+.form-registro > div > p{
+    font-size: 24px;
+    text-align:left;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.form-registro > div > input::placeholder{
+    font-size: 24px;
+}
+
+.form-registro > .registrar{
+    margin-top: 21px;
+    border: 0;
+    width: 500px;
+    height: 54px;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    background-color: #3151A1;
+    text-align: center;
+}
+
+/* BUSCAR DEPARTAMENTOS */
+.content-search{
+    top: -80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1500px;
+    height: 160px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.51); 
+}
+
+.search{
+    width: 1445px;
+    height: 103px;
+    left: 28px;
+    top: 28px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.856);
+    border-radius: 6px;
+}
+
+.send{
+    border: 0;
+    width: 130px;
+    height: 40px;
+    float: right;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: #3151A1;
+}
+
+.form-search{
+    float: left;
+    width: 1445px;
+}
+
+.form-search > div{
+    width: 340px;
+    height: 103px;
+    background: rgba(255, 255, 255, 0.51);
+    border: 1px solid rgba(0, 0, 0, 0.28);
+    box-sizing: border-box;
+    display: table-cell;
+}
+
+.form-search > div:nth-child(2){
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+.form-search > div > input{
+    position: absolute;
+    border: 0;
+    background:transparent;
+    width: 335px;
+    height: 100px;
+    font-weight: 400;
+    font-size: 24px;
+    text-indent: 10px;
+    padding-top: 18px;
+}
+
+.form-search > div > input::placeholder{
+    color: #3151A1; 
+    padding-top: 100px;
+    font-weight: 700;
+}
+
+.form-search > div > h2{
+    margin-top: 14px;
+    margin-left: 14px;
+    position: absolute;
+    font-weight: 400;
+    color: #00000066;
+    font-size: 24px;
+}
+
+.form-search > .search-btn{
+    border: 0;
+    width: 100px;
+    height: 103px;
+    background-color: #3151A1;
+    float: right;
+    border-top-right-radius: 5px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/*DESTINO POPULAR*/
+.destino-popular{ 
+    margin-top: -70px;
+    margin-bottom: 50px;
+}
+
+.title-2{ 
+    margin-left: 100px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.title-2 > a{ 
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    cursor:pointer; 
+}
+
+.destino-popular > a{ 
+    text-decoration: none;
+    color: black;
+    margin-left: 100px;
+    font-size: 24px;
+}
+
+.image{ 
+    width: 380px;
+    display: inline-block;
+    margin-top:30px;
+    overflow: hidden;
+    padding: 0px 0px 50px 50px;
+    padding: 0px 0px 0px 40px;
+    margin-right: 40px;
+}
+
+.image > a{ 
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top:08px;
+}
+
+.image > p{ 
+    color: black;
+    font-weight: 200;
+    font-size: 24px;
+    margin-top: 2px;
+}
+
+.blue-element{
+    width: 279px;
+    height: 13px;
+    margin-right: auto;
+    margin-left: auto;
+    background: rgba(49, 81, 162, 0.43); 
+}
+
+/* SERVICIOS */
+.services{
+    width: 100%; 
+    height: 763px;
+}
+
+.title-3{ 
+    margin-left: 100px;
+    margin-top: 90px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.title-3 > a{ 
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.services > p{
+    width: 494px;
+    margin-left: 100px;
+    margin-top: 60px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.services > p:nth-child(4){
+    top: 5px;
+    margin-left: 100px;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.img-service{
+    width: 1000px;
+    height: 900px;
+    margin-right: 150px;
+    height: 600px;
+    float:right;
+ 
+}
+
+/* CONTÁCTANOS */
+.contact{
+    height: 500px;
+}
+
+.title-4{ 
+    margin-left: 100px;
+    margin-top: 90px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.title-4 > a{ 
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.form-contacto {
+    width: auto;
+    float:right;
+    margin-right: 150px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   
+
+}
+
+.form-contacto > ul > li > input{
+    width: 700px;
+    height: 47px;
+    left: 756px;
+    margin-top: 21px;
+    background: #E9E9E9;
+    font-size: 24px;
+    font-weight: 400;
+    border:0;
+}
+.form-contacto > ul > li > textarea{
+    width: 700px;
+    height: 192px;
+    left: 756px;
+    margin-top: 21px;
+    background: #E9E9E9;
+    font-size: 24px;
+    border:0;
+    font-weight: 400;
+}
+
+.contact > p{
+    color: rgba(0, 0, 0, 0.53);
+    width: 617px;
+    margin-left: 100px;
+    margin-top: 60px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 132px;
+    background: #000000;
+    color: white;
+}
+
+.info-ubicacion > img{
+    margin-left: 100px;
+}
+
+.info-ubicacion > p{
+    margin-left: 10px;
+    margin-top: 30px;
+    color: #FFFFFF ;
+    align-items: center;
+    font-size: 18px;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.info-correo > img{
+    margin-left: 100px;
+}
+
+.info-correo > p{
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #FFFFFF ;
+    font-size: 18px;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer > p{
+    color: rgba(255, 255, 255, 0.8);
+    float: right;
+    margin-top: 60px;
+    margin-right: 100px;
+}
+
+.modal-open{
+    padding-right: 0px;
+}
+
+body{
+    padding-right: 0px !important;
+}
+

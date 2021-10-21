@@ -1,0 +1,144 @@
+.image-bg-alojamiento{
+    height: 445px;
+    width: 100%;
+    
+}
+
+.content-search-servicio{
+    top: -250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1500px;
+    height: 160px;
+    position: relative;
+    
+}
+
+.content-search-servicio > h1{
+    font-size: 48px;
+    margin-left: 30px;
+    color: white;
+}
+
+.content-servicios{
+    padding-bottom: 100px;
+    margin-top: -100px;
+}
+
+.servicios-info{
+    margin: auto;
+    width: 1210px;
+    height: 390px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+}
+
+.servicios-info > img{
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.descripcion-servicio{
+    margin-left: 400px;
+    margin-top: 45px;
+    float: right;
+    position: absolute;
+}
+
+.descripcion-servicio > p{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: -10px;
+    width: 700px;
+}
+
+.descripcion-servicio > a{
+    font-size: 36px;
+    color: #000000;
+}
+
+.info-valor{
+    position: absolute;
+    margin-left: 950px;
+    margin-top: 280px;
+}
+
+.info-valor > p {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: -05px;
+}
+
+.info-valor > a {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.search-servicio{
+    width: 1445px;
+    height: 103px;
+    left: 28px;
+    top: 28px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.856);
+    border-radius: 6px;
+}
+
+.form-search-servicio{
+    float: left;
+    width: 1445px;
+}
+
+.form-search-servicio > div{
+    width: 340px;
+    height: 103px;
+    background: rgba(255, 255, 255, 0.51);
+    border: 1px solid rgba(0, 0, 0, 0.28);
+    box-sizing: border-box;
+    display: table-cell;
+}
+
+.form-search-servicio > div:nth-child(2){
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+.form-search-servicio > div > input{
+    position: absolute;
+    border: 0;
+    background:transparent;
+    width: 335px;
+    height: 100px;
+    font-weight: 400;
+    font-size: 24px;
+    text-indent: 14px;
+    padding-top: 18px;
+}
+
+.form-search-servicio > div > input::placeholder{
+    color: #3151A1; 
+    padding-top: 100px;
+    font-weight: 700;
+}
+
+.form-search-servicio > div > h2{
+    margin-top: 14px;
+    margin-left: 14px;
+    position: absolute;
+    font-weight: 400;
+    color: #00000066;
+    font-size: 24px;
+}
+
+.form-search-servicio > .search-btn{
+    border: 0;
+    width: 100px;
+    height: 103px;
+    background-color: #3151A1;
+    float: right;
+    border-top-right-radius: 5px;
+    border-radius: 0px 5px 5px 0px;
+}

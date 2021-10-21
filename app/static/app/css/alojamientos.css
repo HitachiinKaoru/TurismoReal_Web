@@ -1,0 +1,78 @@
+/*ALOJAMIENTOS*/
+.image-bg-alojamiento{
+    height: 445px;
+    width: 100%;
+    
+}
+
+.content-search-alojamientos{
+    top: -250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1500px;
+    height: 160px;
+    position: relative;
+    
+}
+
+.content-search-alojamientos > h1{
+    font-size: 48px;
+    margin-left: 30px;
+    color: white;
+}
+
+.content-alojamiento{
+    padding-bottom: 100px;
+    margin-top: -100px;
+}
+
+.alojamientos{
+    margin: auto;
+    width: 1210px;
+    height: 390px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+}
+
+.alojamientos > img{
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.descripcion{
+    margin-left: 400px;
+    margin-top: 45px;
+    float: right;
+    position: absolute;
+}
+
+.descripcion > p{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: -10px;
+}
+
+.descripcion > a{
+    font-size: 36px;
+    color: #000000;
+}
+
+.info-arriendo{
+    position: absolute;
+    margin-left: 950px;
+    margin-top: 280px;
+}
+
+.info-arriendo > p {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: -05px;
+}
+
+.info-arriendo > a {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+}
